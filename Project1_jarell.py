@@ -1,6 +1,4 @@
-
 # Shopper 1
-
 shopper_name = "Jarell Noble"
 
 grocery_1_price = 1.32
@@ -31,9 +29,7 @@ average_price = round(total_bill / total_items,2)
 
 print(f"{shopper_name.title()}: Total bill ${total_bill}, average price per item ${average_price}")
 
-
 # Shopper 2
-
 shopper_name = "Cindy James"
 
 grocery_1_price = 8.50
