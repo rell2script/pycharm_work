@@ -7,11 +7,11 @@ lengths = [3.20, 3.47, 3.23, 4.23, 4.39, 4.21, 3.35, 3.50, 3.57, 3.05]
 print("Number of songs:", len(songs))
 print("First song:", songs[0])
 print("Last song:", songs[-1])
-print("First three songs:", songs[:3])
-print("Last three songs:", songs[-3:])
+print("Opening songs:", songs[:3])
+print("Closing songs:", songs[-3:])
 
 # 2. Every other song, starting with the first
-short_playlist = songs[::2]
+short_playlist = songs[::3]
 print("Short playlist:", short_playlist)
 
 # 3. Add songs to the end
@@ -21,12 +21,12 @@ songs.extend(["Watermelon Sugar", "Save Your Tears"])
 songs.remove("Perfect")
 songs.remove("Believer")
 
-# 5. Copy and sort, keeping songs in their original playlist order
+# 5. Copy and sort
 alphabetical_songs = sorted(songs)
 print("Updated playlist:", songs)
 print("Alphabetical playlist:", alphabetical_songs)
 
-# 6. Analyze song lengths
+# 6. find song lengths
 total_length = sum(lengths)
 shortest_song = min(lengths)
 longest_song = max(lengths)
