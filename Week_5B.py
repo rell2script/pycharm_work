@@ -61,4 +61,41 @@ if hours_worked < 0:
     print("error")
 
 #9
+for number in range(1, 11):
+    if number % 2 == 0:
+        print(f"{number} is even")
+    else:
+        print(f"{number} is odd")
 
+#10
+word = "mom"
+if word == word[::-1]:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+
+#11
+n = 3
+factorial = 1
+for number in range(1, n + 1):
+    factorial *= number
+print(f"{n}! = {factorial}")
+
+#12
+#THE error is that the parenthesis is not closed. there also is no "f" in the print statement
+fruits = ["apple","banana","mango"]
+for i in range(len(fruits)):
+    print(fruits[i])
+#will pring apple, banana , and mango
+
+
+
+
+#13 code was missing a ":"after the if statement. now will print 6 8 and 10
+numbers = [2,6,8,3,10]
+for num in numbers:
+    if num > 5:
+        print(num)
+
+#14 not in checks the list for mike and derek. the names that produce true are John and Sarah
+# will print " john can enter. sarah can enter. mike cannot enter. derek cannot enter.
