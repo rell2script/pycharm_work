@@ -33,7 +33,7 @@ def read_three_scores():
 
 
 def display_menu():
-    print("\n===== Student Grade Management =====")
+    print("\n== Student Grade Management ==")
     print("1. Calculate Average")
     print("2. Find Highest Score")
     print("3. Find Lowest Score")
