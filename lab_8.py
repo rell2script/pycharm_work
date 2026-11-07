@@ -1,6 +1,6 @@
+#1
 import random
 
-#1
 def generate_secret_number():
     return random.randint(1, 20)
 
