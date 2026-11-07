@@ -1,3 +1,4 @@
+#1
 def calculate_grade(score):
     """Return the letter grade for a score from 0 to 100."""
     if score >= 90:
@@ -32,82 +33,8 @@ if __name__ == "__main__":
     # Positional and keyword arguments
     show_bill(calculate_bill("Desk", 60, quantity=2))
 def calculate_average(*temperatures):
-
-  """Return the average of any number of temperatures."""
-
-  if not temperatures:
-
-    raise ValueError("At least one temperature is required.")
-
-  return sum(temperatures) / len(temperatures)
-
-
-
-
-
-def read_temperature(day):
-
-  while True:
-
-    try:
-
-      return float(input(f"Enter the temperature for day {day}: "))
-
-    except ValueError:
-
-      print("Please enter a valid number.")
-
-
-
-
-
-def main():
-
-  temperatures = []
-
-  day = 1
-
-  while day <= 7:
-
-    temperatures.append(read_temperature(day))
-
-    day += 1
-
-
-
-  average = calculate_average(*temperatures)
-
-  if average > 80:
-
-    classification = "Hot week"
-
-  elif average >= 60:
-
-    classification = "Moderate week"
-
-  else:
-
-    classification = "Cold week"
-
-
-
-  print(f"Average temperature: {average:.2f}")
-
-  print(classification)
-
-
-
-
-
-if __name__ == "__main__":
-
-  main()
-
-
-
+ #2
 def update_balance(balance, amount, transaction="deposit"):
-
-  """Return the balance after a deposit or permitted withdrawal."""
 
   if transaction == "deposit":
 
@@ -123,9 +50,9 @@ def update_balance(balance, amount, transaction="deposit"):
 
     return balance - amount
 
-  raise ValueError("Transaction must be 'deposit' or 'withdraw'.")
+ print("Transaction must be 'deposit' or 'withdraw'.")
 
-
+#3
 
 def read_amount():
 
@@ -146,7 +73,7 @@ def read_amount():
     except ValueError:
 
       print("Please enter a valid number.")
-
+#4
 def main():
 
   balance = 0.0
